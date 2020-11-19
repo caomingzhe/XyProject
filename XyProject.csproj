@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\CCache\CCache.csproj" />
+    <ProjectReference Include="..\CTCache\CTCache.csproj" />
   </ItemGroup>
 
 </Project>
