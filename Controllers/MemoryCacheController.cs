@@ -11,10 +11,12 @@ namespace XyProject.Controllers
     public class MemoryCacheController : ControllerBase
     {
         private readonly IMemoryCacheService _memoryCacheService;
+        private readonly IRedisCacheService _redisCacheService;
 
-        public MemoryCacheController(IMemoryCacheService memoryCacheService)
+        public MemoryCacheController(IMemoryCacheService memoryCacheService, IRedisCacheService redisCacheService)
         {
             _memoryCacheService = memoryCacheService;
+            _redisCacheService = redisCacheService;
         }
 
         [HttpPost]
