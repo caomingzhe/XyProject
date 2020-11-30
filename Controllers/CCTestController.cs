@@ -12,9 +12,9 @@ namespace XyProject.Controllers
     [ApiController]
     public class CCTestController : ControllerBase
     {
-        private readonly CacheTarget _cache;
+        private readonly ICacheTarget _cache;
 
-        public CCTestController(CacheTarget cache)
+        public CCTestController(ICacheTarget cache)
         {
             _cache = cache;
         }

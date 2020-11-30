@@ -30,7 +30,7 @@ namespace XyProject
             //接口注入
             services.AddScoped<IMemoryCacheHelper, MemoryCacheHelper>();
             services.AddScoped<IRedisHelper, RedisHelper>();
-            services.AddScoped<CacheTarget, CacheAdapter>();
+            services.AddScoped<ICacheTarget, CacheAdapter>();
 
             services.AddMemoryCache();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
