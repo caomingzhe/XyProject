@@ -5,6 +5,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="XyProject.Application\**" />
+    <Compile Remove="XyProject.Contracts\**" />
+    <Content Remove="XyProject.Application\**" />
+    <Content Remove="XyProject.Contracts\**" />
+    <EmbeddedResource Remove="XyProject.Application\**" />
+    <EmbeddedResource Remove="XyProject.Contracts\**" />
+    <None Remove="XyProject.Application\**" />
+    <None Remove="XyProject.Contracts\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="wwwroot\" />
   </ItemGroup>
 

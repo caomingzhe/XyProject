@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.29424.173
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "XyProject", "XyProject.csproj", "{25BC4724-5E08-4014-BCC2-E70C83C4FCF2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XyProject.Contracts", "..\XyProject.Contracts\XyProject.Contracts.csproj", "{586DD989-9145-493F-911A-2E03E95D2C35}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XyProject.Contracts", ".\XyProject.Contracts\XyProject.Contracts.csproj", "{586DD989-9145-493F-911A-2E03E95D2C35}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XyProject.Application", "..\XyProject.Application\XyProject.Application.csproj", "{47068FD3-C672-45EC-A69E-9E0ED5680B62}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XyProject.Application", ".\XyProject.Application\XyProject.Application.csproj", "{47068FD3-C672-45EC-A69E-9E0ED5680B62}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
