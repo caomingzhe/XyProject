@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
+using XyProject.Contracts;
 
 namespace XyProject.Controllers
 {
@@ -10,24 +11,39 @@ namespace XyProject.Controllers
     [ApiController]
     public class ValuesController : ControllerBase
     {
+        private readonly IMemoryCacheService _memoryCacheService;
+
+        public ValuesController(IMemoryCacheService memoryCacheService)
+        {
+            _memoryCacheService = memoryCacheService;
+        }
+
         // GET api/values
         [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+        public ActionResult<string> Get()
         {
-            return new string[] { "value1", "value2" };
+            //if (_memoryCacheService.SetCache<string>("1", "abc"))
+            //{
+            //    return "success";
+            //}
+
+            return "fail";
         }
 
         // GET api/values/5
         [HttpGet("{id}")]
         public ActionResult<string> Get(int id)
         {
-            return "value";
+            string str = _memoryCacheService.GetCache<string>(id.ToString());
+
+            return str;
         }
 
         // POST api/values
         [HttpPost]
         public void Post([FromBody] string value)
         {
+            
         }
 
         // PUT api/values/5
